@@ -21,7 +21,7 @@ attr_accessor :total, :discount, :last_trans, :items
  
  
  def apply_discount
-    if @discount = 0
+    if @discount != 0
      return "There is no discount to apply."
      else
       self.total -= (0.01 * @discount * @total).to_i
