@@ -33,7 +33,8 @@ attr_accessor :total, :discount, :last_trans, :items
 		@items
 	end
  
-   
+   def void_last_transaction
+   end 
    
    
 
