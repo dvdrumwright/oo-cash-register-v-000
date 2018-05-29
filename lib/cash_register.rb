@@ -36,7 +36,5 @@ attr_accessor :total, :discount, :last_trans, :items
    def void_last_transaction
 		self.total = total - @last_trans
 	end
-end
 
-end 
 end 
