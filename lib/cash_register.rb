@@ -21,13 +21,13 @@ attr_accessor :total, :discount, :last_trans, :items
  
  
  def apply_discount
-    if @discount != 0
-     return "There is no discount to apply."
-     else
-      self.total -= (0.01 * @discount * @total).to_i
-      return "After the discount, the total comes to $#{self.total}."
-      return self.items 
-    end 
+		if discount != 0
+		self.total = (total * ((100.0 - discount.to_f)/100)).to_i
+			"After the discount, the total comes to $#{self.total}."
+		else
+      		"There is no discount to apply."
+    	end
+	end
     
     def items
 		@items
